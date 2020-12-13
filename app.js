@@ -1,15 +1,31 @@
-// 1 Переменные
+// const name = 'Денис'
+// const age = '19'
 
-var name = 'Denis' // Устаревшая
-const sec = 'Kamchatov' 
-let age = 19
-console.log(age) // Вывести в консоль в браузере
+// const output = `Привет, меня зовут ${name} и мне ${age} лет` // Более удобный способ записи вывода
+// console.log(output)      
 
-// 2 Мутирование
-// console.log('Имя человека: ' + name + ', а возраст: ' + age) // JS автоматически преобразует age в string
+// const name = 'Денис'
+// console.log(name.toUpperCase()) // Все буквы большИе
+// console.log(name.toLowerCase())
+// console.log(name.charAt(2)) // Выводит символ под 2 индексом  
+// console.log(name.indexOf('ни')) // Проверяет есть ли такие символы в переменной 
+// console.log(name.startsWith('Ден')) // Сравнивает и проверяет сходятся ли  символы с началом переменной
+// console.log(name.endsWith('ис')) // Сравнивает и проверяет сходятся ли символы с концом переменной
+// console.log(name.repeat(3)) // Выводит переменную в строчку 3 раза 
 
-// const firstName = prompt('Введите ваше имя: ')
-// alert('Привет, ' + firstName)
+// const string = '    password    '
+// console.log(string.trim())
+// console.log(string.trimLeft()) // Очищает пробелы в переменной
+// console.log(string.trimRight())  
 
-// 3 Операторы
-// console.log(++age) // ++ - оператор увеличения на 1, аналогично --
+function logPerson(s, name, age) {
+    console.log(s, name, age)
+    return `${s[0]}${name}${s[1]}${age}`
+}
+
+personName = 'Денис'
+personAge = 19
+
+const output = logPerson`Имя: ${personName}, Возраст: ${personAge}`
+
+console.log(output)
