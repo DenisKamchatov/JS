@@ -18,14 +18,14 @@
 // console.log(string.trimLeft()) // Очищает пробелы в переменной
 // console.log(string.trimRight())  
 
-function logPerson(s, name, age) {
-    console.log(s, name, age)
-    return `${s[0]}${name}${s[1]}${age}`
-}
+// function logPerson(s, name, age) {
+//     console.log(s, name, age)
+//     return `${s[0]}${name}${s[1]}${age}`
+// }
 
-personName = 'Денис'
-personAge = 19
+// personName = 'Денис'
+// personAge = 19
 
-const output = logPerson`Имя: ${personName}, Возраст: ${personAge}`
+// const output = logPerson`Имя: ${personName}, Возраст: ${personAge}`
 
-console.log(output)
+// console.log(output)
