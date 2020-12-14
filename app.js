@@ -1,31 +1,30 @@
+// 1 Функции
+
+// Function Declaration
+// function greet(name) {
+//     console.log('Привет, ' + name)
+// }
 // const name = 'Денис'
-// const age = '19'
 
-// const output = `Привет, меня зовут ${name} и мне ${age} лет` // Более удобный способ записи вывода
-// console.log(output)      
+// Function Expression
+// const greet2 = function greet2(name2) {
+//     console.log('Привет2, ' + name2)
+// }
+// const name2 = 'Максим'
 
-// const name = 'Денис'
-// console.log(name.toUpperCase()) // Все буквы большИе
-// console.log(name.toLowerCase())
-// console.log(name.charAt(2)) // Выводит символ под 2 индексом  
-// console.log(name.indexOf('ни')) // Проверяет есть ли такие символы в переменной 
-// console.log(name.startsWith('Ден')) // Сравнивает и проверяет сходятся ли  символы с началом переменной
-// console.log(name.endsWith('ис')) // Сравнивает и проверяет сходятся ли символы с концом переменной
-// console.log(name.repeat(3)) // Выводит переменную в строчку 3 раза 
+// greet('Денис')
+// greet2('Максим')
 
-// const string = '    password    '
-// console.log(string.trim())
-// console.log(string.trimLeft()) // Очищает пробелы в переменной
-// console.log(string.trimRight())  
+// 2 Анонимные функции
 
-function logPerson(s, name, age) {
-    console.log(s, name, age)
-    return `${s[0]}${name}${s[1]}${age}`
-}
+// let counter = 0
+// const interval = setInterval(function() { // setInterval - задает интервал, а setTimeout - задает задержку перед написание только первой строки
+//     if (counter === 5) {
+//         clearInterval(interval) // clearInterval - тормозит интервал
+//     } else {
+//         console.log(++counter)
+//     }
+//       // Функция, которая с задержкой в 1000ms будет прибавлять 1 к counter
+// }, 1000)
 
-personName = 'Денис'
-personAge = 19
-
-const output = logPerson`Имя: ${personName}, Возраст: ${personAge}`
-
-console.log(output)
+// 3 Стрелочные функции
