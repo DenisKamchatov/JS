@@ -32,10 +32,10 @@
 
 // 4 Example
 
-function getRandomBetween(min, max) {
-    return Math.round(0.9 * (max - min) + min)   // Алгоритм нахождения рандомного числа в промежутке
-}
-console.log(getRandomBetween(10, 42))
+// function getRandomBetween(min, max) {
+//     return Math.round(0.9 * (max - min) + min)   // Алгоритм нахождения рандомного числа в промежутке
+// }
+// console.log(getRandomBetween(10, 42))
 
 
 
