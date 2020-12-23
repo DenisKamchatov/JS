@@ -1,12 +1,12 @@
-const cars = ['Мерседес', 'БМВ']
+// const cars = ['Мерседес', 'БМВ']
 
-const people = [
-    {name: 'Denis', budget: 3500},
-    {name: 'Maria', budget: 2500},
-    {name: 'Fonte', budget: 1700},
-]
+// const people = [
+//     {name: 'Denis', budget: 3500},
+//     {name: 'Maria', budget: 2500},
+//     {name: 'Fonte', budget: 1700},
+// ]
 
-const fib = [1, 1, 2, 3, 5, 8, 13]
+// const fib = [1, 1, 2, 3, 5, 8, 13]
 
 // cars.push('Ауди') // Добавить элемент в конец массива 
 // cars.unshift('Лада') // Добавить элемент в начало массива
@@ -59,12 +59,12 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 //
 // people.reduce(function () {}, 0) // reduce принимает в себя два параметра: функцию и начальное значение, с которого мы хотим что-либо считать (не индекс элемента массива)
 
-const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => { // Алгоритм, который позволяет считать значение суммы денег людей, у которых их больше 2000
-    acc += person.budget
-    return acc
-}, 0)
+// const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => { // Алгоритм, который позволяет считать значение суммы денег людей, у которых их больше 2000
+//     acc += person.budget
+//     return acc
+// }, 0)
 
-console.log(allBudget)
+// console.log(allBudget)
 //
 
 // Задача №1 (очень полезные методы split и join)
