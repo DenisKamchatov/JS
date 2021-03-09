@@ -35,9 +35,9 @@ link.addEventListener('click', (event) => {   // При нажатии на сс
     // console.log('Click on link', event.target.getAttribute('href'))       // Если посмотреть на event в консоли, то можно увидеть много полезных методов для click
     const url = event.target.getAttribute('href') // getAttribute - выводит сам объект (в данном случае  ссылку)
     window.location = url // По ссылке переходит не в новое окно, а в то же
-})                                               
+})
 
-function addStylesTo(node, text, color="red", fontSize) {
+function addStylesTo(node, text, color = "red", fontSize) {
     node.textContent = text
     node.style.color = color // .style используется для внешних изменений элемента 
     node.style.textAlign = 'center'
@@ -46,7 +46,7 @@ function addStylesTo(node, text, color="red", fontSize) {
     node.style.display = 'block' // Чтобы наша ссылка отображалась как остальные блоки
     node.style.width = '100%'    // 
     // falsy: '', undefined, null, 0, false
-    if(fontSize) {                      // Проверка: если fontSize не falsy
+    if (fontSize) {                      // Проверка: если fontSize не falsy
         node.style.fontSize = fontSize
     }
 }
