@@ -50,7 +50,7 @@
 // 5 Замыкания
 
 // function createMember(name) {
-//     return function(lastName) {
+//     return function (lastName) {
 //         console.log(name + ' ' + lastName)
 //     }
 // }
